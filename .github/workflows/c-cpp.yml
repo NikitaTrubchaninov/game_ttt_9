@@ -1,0 +1,28 @@
+name: CI_TrubchaninovNikita_Z21
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v4
+
+      - name: Configure CMake
+        run: |
+          mkdir build
+          cd build
+          cmake .. -DBUILD_SHARED_LIBS=OFF
+
+      - name: Build project
+        run: |
+          cd build
+          cmake --build . --config Release
+
+      - name: Run executable in test mode
+        run: |
+          cd build/Release
+          cmd /c gamettt90.exe --test
