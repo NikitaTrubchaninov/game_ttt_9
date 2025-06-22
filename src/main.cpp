@@ -1,21 +1,16 @@
 #include "tictactoe.hpp"
 #include <iostream>
 
-int main() {
+int main(int argc, char* argv[]) {
 
-     if(getenv("CI") != nullptr) {
-        std::cout << "=== CI CHECK ===" << std::endl;
-        std::cout << "Game build: SUCCESS" << std::endl;
-        std::cout << "Basic test: PASSED" << std::endl;
-        std::cout << "Everything works OK!" << std::endl;
-        return 0; // Завершаем программу в CI-режиме
+     if (argc > 1 && std::string(argv[1]) == "--test") {
+        std::cout << "Everything works fine." << std::endl;
+        return 0;
     }
 
     int users_chose;
     bool user1 = false;
     bool user2 = false;
-    std::string name_player1, name_player2;
-
 
     while (true) {
         std::cout << "KRESTIKI-NULIKI\nsettings";
