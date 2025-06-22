@@ -1,4 +1,0 @@
-C:/Users/knigh/Робочий стіл/gamettt90/build/CMakeFiles/tictactoe_lib.dir
-C:/Users/knigh/Робочий стіл/gamettt90/build/CMakeFiles/gamettt90.dir
-C:/Users/knigh/Робочий стіл/gamettt90/build/CMakeFiles/ALL_BUILD.dir
-C:/Users/knigh/Робочий стіл/gamettt90/build/CMakeFiles/ZERO_CHECK.dir
