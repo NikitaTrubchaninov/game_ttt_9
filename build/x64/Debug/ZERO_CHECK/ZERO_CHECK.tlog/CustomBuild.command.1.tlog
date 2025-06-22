@@ -1,0 +1,10 @@
+^C:\USERS\KNIGH\РОБОЧИЙ СТІЛ\GAMETTT90\BUILD\CMAKEFILES\949563F9662796D70632785A4DD82762\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/knigh/Робочий стіл/gamettt90" "-BC:/Users/knigh/Робочий стіл/gamettt90/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/knigh/Робочий стіл/gamettt90/build/TicTacToe.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
